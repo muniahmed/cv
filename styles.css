@@ -166,7 +166,9 @@ h1 {
   padding-right: 100px;
 }
 
+
 @media screen and (max-width: 550px) {
+
   #copyrights {
     justify-content: center;
   }
