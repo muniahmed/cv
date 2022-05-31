@@ -103,7 +103,25 @@ h1 {
 .project-tile p {
   margin: 0px;
   padding: 16px 0px;
+  font-size: 1.15em;
+  font-weight: 600;
+
 }
+
+.project-tile span{
+  font-size: 1.15em;
+  font-weight: bold;
+}
+
+.animation {
+  color: #282c34;
+  transition: color 0.3s ease-out;
+}
+
+.project-tile:hover .animation {
+  color: #ECE0C8;
+}
+
 
 #see-more {
   padding: 10px 25px;
@@ -148,10 +166,11 @@ h1 {
   text-decoration: none;
   color: inherit;
   display: inline-block;
+  transition: transform 0.3s ease-out;
 }
 
-.icon-button i {
-  margin-right: 5px;
+.icon-button:hover {
+  transform: translateY(8px);
 }
 
 #copyrights {
@@ -175,5 +194,39 @@ h1 {
 
   #copyrights p {
     padding-right: 0px;
+  }
+}
+
+
+.typewriter p {
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: #f6f7f8;
   }
 }
