@@ -62,19 +62,29 @@ h1 {
 }
 
 @keyframes hide {
-  from {opacity: 0%;}
-  to {opacity: 0%;}
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 0%;
+  }
 }
 
 #hide-box {
-  animation-name: hide; 
-  animation-duration: 5s;
-  animation-iteration-count:1;
+  animation-name: hide;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
 }
 
 @keyframes fade-in {
-  from {opacity: 0%;}
-  to {opacity: 100%;}
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
 }
 
 #scroll-down-indicator {
@@ -83,19 +93,26 @@ h1 {
   position: relative;
   top: 35vh;
   animation-name: fade-in;
-  animation-delay: 5s; 
+  animation-delay: 6s;
   animation-duration: 3s;
-  animation-iteration-count:1;
+  animation-iteration-count: 1;
 }
 
-#scroll-down-indicator p{
-  font-size:large;
+#scroll-down-indicator p {
+  font-size: large;
   color: #f6f7f8;
 }
 
 @keyframes fade-down {
-  from {opacity: 100%; top: 0px;}
-  to {opacity: 0; top: 50px;}
+  from {
+    opacity: 100%;
+    top: 0px;
+  }
+
+  to {
+    opacity: 0;
+    top: 50px;
+  }
 }
 
 #chevrons {
@@ -103,11 +120,10 @@ h1 {
   flex-direction: column;
   position: relative;
   animation-name: fade-down;
-  animation-delay: 7s; 
+  animation-delay: 8s;
   animation-duration: 2s;
-  animation-iteration-count:3;
+  animation-iteration-count: 3;
 }
-
 
 #projects {
   text-align: center;
@@ -156,7 +172,7 @@ h1 {
 
 }
 
-.project-tile span{
+.project-tile span {
   font-size: 1.15em;
   font-weight: bold;
 }
@@ -255,6 +271,7 @@ h1 {
   animation:
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
+  animation-delay: 1s;
 }
 
 @keyframes typing {
@@ -277,4 +294,9 @@ h1 {
   50% {
     border-color: #f6f7f8;
   }
+}
+
+#subheader-hide-box {
+  animation-name: hide;
+  animation-duration: 1s;
 }
