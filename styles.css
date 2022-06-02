@@ -61,6 +61,54 @@ h1 {
   color: #ff3452;
 }
 
+@keyframes hide {
+  from {opacity: 0%;}
+  to {opacity: 0%;}
+}
+
+#hide-box {
+  animation-name: hide; 
+  animation-duration: 5s;
+  animation-iteration-count:1;
+}
+
+@keyframes fade-in {
+  from {opacity: 0%;}
+  to {opacity: 100%;}
+}
+
+#scroll-down-indicator {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 35vh;
+  animation-name: fade-in;
+  animation-delay: 5s; 
+  animation-duration: 3s;
+  animation-iteration-count:1;
+}
+
+#scroll-down-indicator p{
+  font-size:large;
+  color: #f6f7f8;
+}
+
+@keyframes fade-down {
+  from {opacity: 100%; top: 0px;}
+  to {opacity: 0; top: 50px;}
+}
+
+#chevrons {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  animation-name: fade-down;
+  animation-delay: 7s; 
+  animation-duration: 2s;
+  animation-iteration-count:3;
+}
+
+
 #projects {
   text-align: center;
   justify-content: center;
@@ -200,7 +248,7 @@ h1 {
 
 .typewriter p {
   overflow: hidden;
-  border-right: .15em solid orange;
+  border-right: .15em solid #f6f7f8;
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: .15em;
