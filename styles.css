@@ -73,7 +73,7 @@ h1 {
 
 #hide-box {
   animation-name: hide;
-  animation-duration: 6s;
+  animation-duration: 4.5s;
   animation-iteration-count: 1;
 }
 
@@ -93,7 +93,7 @@ h1 {
   position: relative;
   top: 35vh;
   animation-name: fade-in;
-  animation-delay: 6s;
+  animation-delay: 4.5s;
   animation-duration: 3s;
   animation-iteration-count: 1;
 }
@@ -120,7 +120,7 @@ h1 {
   flex-direction: column;
   position: relative;
   animation-name: fade-down;
-  animation-delay: 8s;
+  animation-delay: 6s;
   animation-duration: 2s;
   animation-iteration-count: 3;
 }
@@ -258,6 +258,10 @@ h1 {
 
   #copyrights p {
     padding-right: 0px;
+  }
+
+  #scroll-down-indicator {
+    top: 25vh;
   }
 }
 
