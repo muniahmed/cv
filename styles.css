@@ -36,8 +36,13 @@ a {
 }
 
 #navbar li {
-  display: inline-block;
+  display: inline;
   padding: 0 15px;
+}
+
+#navbar li:hover {
+  border-bottom: 4px solid #f6f7f8;
+  transition: 0.17s;
 }
 
 #welcome-section {
@@ -169,7 +174,6 @@ h1 {
   padding: 16px 0px;
   font-size: 1.15em;
   font-weight: 600;
-
 }
 
 .project-tile span {
@@ -183,9 +187,8 @@ h1 {
 }
 
 .project-tile:hover .animation {
-  color: #ECE0C8;
+  color: #ece0c8;
 }
-
 
 #see-more {
   padding: 10px 25px;
@@ -249,9 +252,7 @@ h1 {
   padding-right: 100px;
 }
 
-
 @media screen and (max-width: 550px) {
-
   #copyrights {
     justify-content: center;
   }
@@ -265,34 +266,30 @@ h1 {
   }
 }
 
-
 .typewriter p {
   overflow: hidden;
-  border-right: .15em solid #f6f7f8;
+  border-right: 0.15em solid #f6f7f8;
   white-space: nowrap;
   margin: 0 auto;
-  letter-spacing: .15em;
-  animation:
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
   animation-delay: 1s;
 }
 
 @keyframes typing {
   from {
-    width: 0
+    width: 0;
   }
 
   to {
-    width: 100%
+    width: 100%;
   }
 }
 
 @keyframes blink-caret {
-
   from,
   to {
-    border-color: transparent
+    border-color: transparent;
   }
 
   50% {
