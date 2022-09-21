@@ -19,8 +19,8 @@ body {
     rgba(2, 11, 23, 1) 0%,
     rgba(6, 32, 65, 1) 60%
   );
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   position: fixed;
   left: 0px;
   top: 0px;
@@ -142,6 +142,72 @@ h1 {
   animation-delay: 6s;
   animation-duration: 2s;
   animation-iteration-count: 3;
+}
+
+#about-me {
+  height: 92vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+#profile-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#headshot {
+  border-radius: 50%;
+  width: 300px;
+  height: auto;
+  position: absolute;
+}
+
+#gear {
+  filter: brightness(0) invert(1);
+  height: 450px;
+  width: auto;
+  animation-name: spin;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#about-me p {
+  font-size: 32px;
+  margin-left: 80px;
+  width: 35%;
+  display: inline-block;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 800px) {
+  #about-me {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #profile-pic {
+    padding-top: 50px;
+  }
+
+  #gear {
+    height: 300px;
+    width: auto;
+  }
+
+  #headshot {
+    height: 200px;
+    width: auto;
+  }
+
+  #about-me p {
+    width: 80%;
+    margin: 40px 0 0 0;
+  }
 }
 
 #projects {
@@ -313,4 +379,13 @@ h1 {
 #subheader-hide-box {
   animation-name: hide;
   animation-duration: 1s;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
